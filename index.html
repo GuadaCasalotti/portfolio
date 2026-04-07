@@ -142,13 +142,23 @@
   .pgrid2-caps .img-caption { margin-bottom:0; }
 
   @media print { nav { display:none; } .hero { min-height:auto; page-break-after:always; } .caso { page-break-inside:avoid; } }
-  .img {
-    width: 100% !important;
-    height: 350px !important;
-    object-fit: cover !important;
-    object-position: center !important;
-    border-radius: 8px !important;
-}
+  .img { width: 100% !important; height: 350px !important; object-fit: cover !important; object-position: center !important; border-radius: 8px !important; }
+  .html { scroll-behavior: smooth; }
+  .img { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .img:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+
+  a[href="#casos"] { display: inline-block; background-color: #D94F3D; color: #F0EFEB !important; padding: 12px 24px; border-radius: 30px; text-decoration: none; 
+  font-weight: bold; transition: background-color 0.3s ease; }
+a[href="#casos"]:hover { background-color: #111111; }
+.caja-botones { display: flex; gap: 15px; margin-top: 20px; margin-bottom: 40px; flex-wrap: wrap; }
+.btn-contacto { padding: 12px 24px; border-radius: 30px; text-decoration: none !important; font-weight: bold; color: #F0EFEB !important; transition: transform 0.3s ease, background-color 0.3s ease; }
+.btn-contacto:hover { transform: translateY(-3px); }
+.wa { background-color: #25D366; }
+.wa:hover { background-color: #128C7E; }
+.in { background-color: #0077B5; } 
+.in:hover { background-color: #004182; }
+.mail { background-color: #D94F3D; }
+.mail:hover { background-color: #111111; } 
 </style>
 </head>
 <body>
@@ -438,11 +448,11 @@
     <h2 class="section-title">Hagamos equipo,<br>¡hagamos comunicación!</h2>
     <p class="contacto-sub">Estoy disponible para proyectos freelance, posiciones en equipos remotos y colaboraciones. Si tu marca tiene algo para decir, puedo ayudarte.</p>
   </div>
-  <div class="contacto-links">
-    <a href="mailto:guada.figue@gmail.com" class="contacto-link"><div><div class="contacto-link-label">Email</div><div class="contacto-link-value">guada.figue@gmail.com</div></div></a>
-    <a href="tel:+5493574638289" class="contacto-link"><div><div class="contacto-link-label">Teléfono / WhatsApp</div><div class="contacto-link-value">+54 9 3574 638289</div></div></a>
-    <a href="https://www.instagram.com/guada.comunica" target="_blank" class="contacto-link"><div><div class="contacto-link-label">Instagram profesional</div><div class="contacto-link-value">@guada.comunica</div></div></a>
-  </div>
+ <div class="caja-botones">
+  <a href="https://wa.me/5493574638289" target="_blank" class="btn-contacto wa">WhatsApp</a>
+  <a href="https://www.linkedin.com/in/guadacasalotti" target="_blank" class="btn-contacto in">LinkedIn</a>
+  <a href="mailto:guada.figue@gmail.com" target="_blank" class="btn-contacto mail">Email</a>
+</div>
 </section>
 
 <footer>
