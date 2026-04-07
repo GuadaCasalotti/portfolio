@@ -156,12 +156,23 @@ a[href="#casos"]:hover { background-color: #111111; }
 .wa { background-color: #25D366; }
 .wa:hover { background-color: #128C7E; }
 .in { background-color: #0077B5; } 
-.in:hover { background-color: #004182; }
-.mail { background-color: #D94F3D; }
-.mail:hover { background-color: #111111; } 
-.datos-contacto { font-size: 1.1rem; margin-bottom: 25px; margin-top: 20px; }
-.datos-contacto a { color: #F0EFEB !important; text-decoration: underline; transition: color 0.3s ease; }
-.datos-contacto a:hover { color: #111111 !important; }
+  html { scroll-behavior: smooth; }
+  img { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  img:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+  .link-sutil { display: inline-block; color: var(--red); font-size: 0.85rem; font-weight: bold; text-decoration: none; border-bottom: 1px solid var(--red); margin-top: 15px; margin-bottom: 25px; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 0.05em; }
+  .link-sutil:hover { color: var(--black); border-bottom-color: var(--black); }
+  @media screen and (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; flex-direction: column; gap: 1rem; }
+    .hero-left { padding: 8rem 1.5rem 3rem; }
+    .hero-right { padding: 3rem 1.5rem; }
+    section { padding: 4rem 1.5rem; }
+    footer { padding: 2rem 1.5rem; flex-direction: column; gap: 1rem; text-align: center; }
+        .hero, .sobre, .caso, .exp-grid, .form-grid, .contacto { grid-template-columns: 1fr; gap: 3rem; }
+        .hero h1 { font-size: 2.8rem; }
+    .hero-right::before { font-size: 10rem; right: -2rem; }
+    .photo-grid.three img { height: auto; }
+    .caso-visual { min-height: 250px; }
+  }
 </style>
 </head>
 <body>
@@ -223,8 +234,9 @@ a[href="#casos"]:hover { background-color: #111111; }
     <div>
       <div class="caso-label">Evento cultural · 2025 · AC Comunicación</div>
       <h3>Feria del Centro</h3>
-      <p class="caso-desc">Feria del Centro es un evento regional de tres días enfocado en la producción cultural y la economía creativa, con presencia en Córdoba Capital. En la 9ª edición fui líder del equipo de comunicación, con responsabilidad total sobre la estrategia, la producción de contenido y la cobertura en vivo del evento.</p>
-      <p class="caso-desc">Definí los lineamientos editoriales, redacté copies y guiones para cada pieza, coordiné las referencias visuales con el equipo de diseño y supervisé cada etapa de producción. Durante los tres días del evento gestioné la cobertura en vivo en todas las plataformas, con el objetivo de generar feedback e interacción en tiempo real con la audiencia. Al finalizar, analicé los resultados y elaboré un informe con los detalles.</p>
+      <p class="caso-desc">Feria del Centro es un evento regional de tres días enfocado en la producción cultural y la economía creativa, con presencia en Córdoba Capital.En la 9ª edición coordiné la comunicación del evento como parte del equipo de AC Comunicación, asumiendo responsabilidad sobre la estrategia.</p>
+      <p class="caso-desc">Definí los lineamientos editoriales, redacté copies y guiones para cada pieza, coordiné las referencias visuales con el equipo de diseño y supervisé cada etapa de producción. Durante los tres días del evento gestioné la cobertura en vivo en todas las plataformas, con el objetivo de generar feedback e interacción en tiempo real con la audiencia. Al finalizar, analicé los resultados y elaboré un informe con los detalles. (Edición 2025)</p>
+      <br><a href="https://www.instagram.com/feriadelcentro_" target="_blank" class="link-sutil">Ver perfil de IG →</a>
       <div class="caso-role">Rol</div>
       <div class="caso-role-detail">Líder del equipo de comunicación · Estrategia editorial · Cobertura en vivo · Redacción de copies y guiones · Coordinación de producción</div>
       <div class="metrics">
@@ -261,7 +273,7 @@ a[href="#casos"]:hover { background-color: #111111; }
     <div>
       <div class="caso-label">Empresa de sustentabilidad y energías renovables</div>
       <h3>HINS</h3>
-      <p class="caso-desc">HINS es una empresa de sustentabilidad y energías renovables. Ingresé al equipo como Social Media Manager y fui asumiendo mayor responsabilidad hasta coordinar el equipo que gestionaba la comunicación integral de la marca.</p>
+      <p class="caso-desc">HINS es una empresa de sustentabilidad y energías renovables. Ingresé al equipo como Social Media Manager y fui asumiendo mayor responsabilidad hasta coordinar el equipo interno de AC Comunicación que gestionaba la cuenta de la marca.</p>
       <p class="caso-desc">El trabajo implicó traducir contenido técnico de alta complejidad —energías renovables, generación distribuida, economía circular, mercados de carbono— en comunicación clara y accesible para distintas audiencias. Produje contenido para redes sociales, redacté mailings y newsletters institucionales, gacetillas de prensa y material de branding como brochures y presentaciones.</p>
       <div class="caso-role">Rol</div>
       <div class="caso-role-detail">Social Media Manager · Coordinadora de comunicación · Copywriting · Email marketing · Redacción institucional</div>
@@ -285,8 +297,9 @@ a[href="#casos"]:hover { background-color: #111111; }
     <div>
       <div class="caso-label">Concurso provincial · 2 ediciones · HINS</div>
       <h3>Concurso Escuelas Sustentables</h3>
-      <p class="caso-desc">Proyecto de impacto educativo y ambiental organizado por HINS Energía. Participé directamente en la comunicación de las dos ediciones del concurso, primero como SMM de HINS y luego como coordinadora del equipo, manteniéndome implicada por el nivel de tecnicismo requerido y la importancia estratégica del proyecto para la marca.</p>
+      <p class="caso-desc">Proyecto de impacto educativo y ambiental organizado por HINS. Participé en la comunicación de las dos ediciones del concurso como parte del equipo de AC Comunicación, primero como SMM de HINS y luego liderando la gestión operativa del proyecto.</p>
       <p class="caso-desc">Planifiqué contenido para IG, X y LinkedIn, redacté las bases y condiciones del concurso, copywriting para web, mailing y email marketing, y gestioné el seguimiento de campañas paid y orgánicas en todas las plataformas.</p>
+<br><a href="https://escuelassustentables.hins.com.ar/" target="_blank" class="link-sutil">Ver web del concurso →</a>
       <div class="caso-role">Rol</div>
       <div class="caso-role-detail">Social Media Manager · Coordinadora de comunicación · Redacción · Email marketing · Estrategia digital</div>
       <div class="metrics">
@@ -333,6 +346,7 @@ a[href="#casos"]:hover { background-color: #111111; }
         <li>Comunicación enfocada en LinkedIn para construir credibilidad profesional</li>
         <li>Gestión de piezas institucionales (brochures, flyers, presentaciones, mailings)</li>
         <li>Actualización y desarrollo de contenido para la web y e-mailing</li>
+        <br><a href="https://www.linkedin.com/company/flinnar" target="_blank" class="link-sutil">Ver LinkedIn B2B →</a>
       </ul>
       <div class="metrics">
         <div class="metric"><div class="metric-num">+746%</div><div class="metric-desc">Cuentas alcanzadas en Instagram (40% no seguidores)</div></div>
