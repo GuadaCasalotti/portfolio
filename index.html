@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guada Casalotti — Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -24,92 +23,109 @@
     <div class="hero-left">
         <div class="hero-tag">Social Media Strategy</div>
         <h1>Comunico marcas que tienen algo <em>valioso</em> para decir.</h1>
-        <p class="hero-sub">Periodista y comunicadora especializada en branding y storytelling. Foco en resultados medibles y escalables.</p>
-        <a href="#casos" class="hero-cta">Ver mis casos →</a>
-    </div>
-    <div class="hero-right">
-        <div class="hero-stats">
-            <div><div class="stat-num">+100k</div><div class="stat-label">Vistas orgánicas virales</div></div>
-            <div><div class="stat-num">+800</div><div class="stat-label">Inscripciones generadas</div></div>
+        
+        <div class="rotating-metrics-container">
+            <div class="metric-item">
+                <div class="stat-num">+100k</div>
+                <div class="stat-label">Vistas orgánicas virales | Feria del Centro</div>
+            </div>
+            <div class="metric-item">
+                <div class="stat-num">+800</div>
+                <div class="stat-label">Inscripciones generadas | Feria del Centro</div>
+            </div>
+            <div class="metric-item">
+                <div class="stat-num">21.3%</div>
+                <div class="stat-label">Engagement rate promedio | Clientes B2B</div>
+            </div>
         </div>
     </div>
+    <div class="hero-right"></div>
 </section>
 
-<section id="sobre" class="sobre">
-    <div class="sobre-text">
-        <div class="section-tag">Perfil</div>
-        <h2>Social Media Manager con mirada de <em>periodista</em>.</h2>
-        <p>Crecí rodeada de arte. Hoy traduzco ideas en mensajes estratégicos, adaptando el formato según la marca y la audiencia.</p>
-        <div class="skills-grid">
-            <div class="skill-item"><strong>Estrategia</strong><br>Multicanal B2C/B2B</div>
-            <div class="skill-item"><strong>Copywriting</strong><br>Storytelling ES/EN</div>
-            <div class="skill-item"><strong>Coberturas</strong><br>Eventos en vivo</div>
-        </div>
-    </div>
+<section id="sobre">
+    <div class="section-tag">Perfil</div>
+    <h2>Social Media Manager con mirada de <em>periodista</em>.</h2>
+    <p style="color:var(--gray); max-width:700px;">Traduzco ideas y emociones en mensajes con estrategia. Mi meta es acompañar a marcas a generar conexión genuina con su comunidad.</p>
 </section>
 
 <section id="casos">
     <div class="section-tag">Portafolio</div>
-    <h2 class="section-title">Proyectos destacados.</h2>
-    
     <div class="proyectos-showcase">
-        
         <div class="proyecto-card">
             <img src="feria-del-centro.png" class="proyecto-portada">
             <h3>Feria del Centro</h3>
-            <p class="mini-resumen">Liderazgo de comunicación y estrategia para la 9ª edición. Evento regional de economía creativa.</p>
             <button class="btn-ver-mas" onclick="abrirModal('modal-feria')">Mirar este proyecto →</button>
         </div>
-
         <div class="proyecto-card">
             <img src="linkedin-flinn.png" class="proyecto-portada">
             <h3>FLINN — B2B</h3>
-            <p class="mini-resumen">Estrategia en inglés para ingeniería industrial. Construcción de autoridad en LinkedIn.</p>
             <button class="btn-ver-mas" onclick="abrirModal('modal-flinn')">Mirar este proyecto →</button>
         </div>
-
         <div class="proyecto-card">
             <img src="premio-concurso-1.png" class="proyecto-portada">
             <h3>Escuelas Sustentables</h3>
-            <p class="mini-resumen">Proyecto educativo con impacto ambiental. Ganador de Premio EIKON de Oro.</p>
-            <button class="btn-ver-mas" onclick="abrirModal('modal-hins')">Mirar este proyecto →</button>
+            <button class="btn-ver-mas" onclick="abrirModal('modal-sustentables')">Mirar este proyecto →</button>
         </div>
+        <div class="proyecto-card">
+            <img src="recis.png" class="proyecto-portada">
+            <h3>Redacción Cultural</h3>
+            <button class="btn-ver-mas" onclick="abrirModal('modal-cultural')">Mirar este proyecto →</button>
+        </div>
+    </div>
+</section>
 
+<section id="experiencia">
+    <div class="section-tag">Trayectoria</div>
+    <div class="exp-grid">
+        <div class="exp-item">
+            <div class="exp-period">2020 · Actualidad</div>
+            <h3>Comunicadora Digital Freelance</h3>
+            <p style="color:var(--gray); font-size:0.85rem;">Estrategia de contenido, redacción y análisis de métricas para industrias creativas y tecnológicas.</p>
+        </div>
+        <div class="exp-item">
+            <div class="exp-period">2024 · 2025</div>
+            <h3>Coordinadora de Branding</h3>
+            <p style="color:var(--gray); font-size:0.85rem;">Liderazgo de equipo en AC Comunicación. Definición de lineamientos de marca y coordinación de producción.</p>
+        </div>
     </div>
 </section>
 
 <section id="contacto" class="contacto">
-    <div class="section-tag" style="color:white; justify-content:center;">Hablemos</div>
     <h2>¿Hacemos equipo?</h2>
-    <p>Disponible para proyectos freelance y colaboraciones remotas.</p>
     <div class="caja-botones">
         <a href="https://wa.me/5493574638289" class="btn-contacto wa">WhatsApp</a>
         <a href="https://www.linkedin.com/in/guadacasalotti" class="btn-contacto in">LinkedIn</a>
     </div>
 </section>
 
-<footer>
-    Guada Casalotti · Periodista y Comunicadora Digital · 2026
-</footer>
-
 <div id="modal-feria" class="modal-proyecto">
     <div class="modal-contenido">
         <button class="btn-cerrar" onclick="cerrarModal('modal-feria')">&times;</button>
-        <div class="caso">
+        <div class="modal-grid">
             <div>
                 <h3>Feria del Centro</h3>
-                <p class="caso-desc">Coordiné la comunicación de la 9ª edición. Definí lineamientos editoriales, guiones y cobertura en vivo.</p>
-                <div class="metrics">
-                    <div class="metric"><div class="metric-num">+100k</div><div class="metric-desc">Vistas orgánicas</div></div>
-                    <div class="metric"><div class="metric-num">SOLD OUT</div><div class="metric-desc">Inscripciones generadas</div></div>
-                </div>
-                <a href="https://www.instagram.com/feriadelcentro_" class="link-sutil">Ver Instagram →</a>
+                <p class="caso-desc">Feria del Centro es un evento regional enfocado en la producción cultural. En la 9ª edición coordiné la comunicación, definí lineamientos editoriales y supervisé cada etapa de producción, incluyendo coberturas en vivo.</p>
+                <div class="stat-num">+100k</div><p class="stat-label">Vistas orgánicas</p>
             </div>
             <div>
-                <div class="carrusel-tech">
-                    <img src="feria-del-centro.png">
-                    <img src="feed-feria.png">
-                </div>
+                <img src="feria-del-centro.png" class="img-normal">
+                <img src="feed-feria.png" class="img-normal">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-sustentables" class="modal-proyecto">
+    <div class="modal-contenido">
+        <button class="btn-cerrar" onclick="cerrarModal('modal-sustentables')">&times;</button>
+        <div class="modal-grid">
+            <div>
+                <h3>Concurso Escuelas Sustentables</h3>
+                <p class="caso-desc">Proyecto de impacto educativo y ambiental. Ganador del Premio EIKON de Oro. Lideré la gestión operativa y estratégica del proyecto en sus dos ediciones.</p>
+            </div>
+            <div>
+                <img src="premio-concurso-1.png" class="img-normal">
+                <img src="mockup-concurso.png" class="img-normal transp">
             </div>
         </div>
     </div>
@@ -118,20 +134,14 @@
 <div id="modal-flinn" class="modal-proyecto">
     <div class="modal-contenido">
         <button class="btn-cerrar" onclick="cerrarModal('modal-flinn')">&times;</button>
-        <div class="caso">
+        <div class="modal-grid">
             <div>
-                <h3>FLINN — Ingeniería</h3>
-                <p class="caso-desc">Comunicación técnica en inglés para tomadores de decisión. Foco en LinkedIn B2B.</p>
-                <div class="metrics">
-                    <div class="metric"><div class="metric-num">21.3%</div><div class="metric-desc">Engagement en LinkedIn</div></div>
-                    <div class="metric"><div class="metric-num">+746%</div><div class="metric-desc">Alcance en Instagram</div></div>
-                </div>
+                <h3>FLINN — Estrategia B2B</h3>
+                <p class="caso-desc">Estrategia en inglés para una empresa de ingeniería industrial. Mi responsabilidad principal es traducir contenido técnico complejo en comunicación clara para LinkedIn.</p>
             </div>
             <div>
-                <div class="carrusel-tech">
-                    <img src="linkedin-flinn.png">
-                    <img src="brochure-flinn.png">
-                </div>
+                <img src="linkedin-flinn.png" class="img-normal transp">
+                <img src="feed-flinn.png" class="img-normal transp">
             </div>
         </div>
     </div>
