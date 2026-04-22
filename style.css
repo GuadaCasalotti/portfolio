@@ -137,8 +137,17 @@ footer { padding: 4rem; text-align: center; opacity: 0.3; font-size: 0.8rem; bor
 @keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
 
 @media (max-width: 768px) {
-  nav { padding: 1rem 2rem; flex-direction: column; }
-  .hero, .caso { grid-template-columns: 1fr; }
-  section { padding: 4rem 2rem; }
-  .contacto { margin: 0 2rem 2rem; }
+  nav { padding: 1rem 1.5rem; flex-direction: column; gap: 0.5rem; }
+  .hero, .caso { grid-template-columns: 1fr; gap: 2rem; }
+  .hero h1 { font-size: 2.5rem; }
+  .hero-right::before { font-size: 10rem; right: -2rem; }
+  section { padding: 4rem 1.5rem; }
+  .contacto { margin: 0 1.5rem 2rem; }
+  
+  /* Ajustes para la ventana emergente en celu */
+  .modal-proyecto { padding: 1rem; }
+  .modal-contenido { padding: 3rem 1.5rem; margin: 1rem auto; }
+  .btn-cerrar { top: 0.5rem; right: 1rem; font-size: 2.5rem; }
+  .carrusel-tech img { height: 250px !important; } /* Fotos un poco más bajas para celu */
+}
 }
