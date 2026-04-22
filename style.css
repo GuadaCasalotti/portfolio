@@ -1,22 +1,19 @@
 /* =========================================
-   VARIABLES DE MARCA
+   VARIABLES DE MARCA & TECH VIBE
    ========================================= */
 :root {
-  --black: #1a1a18;
+  --black: #0a0a09;
+  --dark-gray: #161614;
   --cream: #f5f0e8;
   --red: #D94F3D; 
   --yellow: #e8c84a;
-  --gray: #9ba3af; /* Aclaré apenitas el gris para que se lea mejor sobre fondo negro */
-  --light: #faf7f2;
+  --gray: #9ba3af;
+  --glass: rgba(26, 26, 24, 0.8);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
 
-/* =========================================
-   BASE (DARK MODE)
-   ========================================= */
 body { 
   background: var(--black); 
   color: var(--cream); 
@@ -26,52 +23,122 @@ body {
   overflow-x: hidden; 
 }
 
-h1, h2, h3, h2.section-title, .caso h3, .sobre-text strong, .skill-name {
-  color: var(--cream);
-}
+h1, h2, h3, .section-title, .skill-name { color: var(--cream); }
 
 /* =========================================
-   NAVEGACIÓN (GLASSMORPHISM)
+   HEADER GLASSMORPHISM
    ========================================= */
 nav { 
-  position: fixed; 
-  top: 0; left: 0; right: 0; 
-  z-index: 100; 
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
-  padding: 1.2rem 4rem; 
-  background: rgba(26, 26, 24, 0.8); 
-  backdrop-filter: blur(12px); 
-  -webkit-backdrop-filter: blur(12px);
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000; 
+  display: flex; justify-content: space-between; align-items: center; 
+  padding: 1.2rem 4rem; background: var(--glass); 
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
 }
-nav .logo { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; letter-spacing: 0.05em; color: var(--cream); }
+nav .logo { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; letter-spacing: 0.05em; }
 nav ul { list-style: none; display: flex; gap: 2.5rem; }
-nav ul a { text-decoration: none; color: var(--cream); font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.6; transition: opacity 0.2s, color 0.2s; }
+nav ul a { text-decoration: none; color: var(--cream); font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.6; transition: 0.3s; }
 nav ul a:hover { opacity: 1; color: var(--yellow); }
 
 /* =========================================
-   HERO (CON ANIMACIÓN FLOTANTE)
+   HERO SECTION
    ========================================= */
-.hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 5rem; }
-.hero-left { padding: 8rem 4rem 4rem; display: flex; flex-direction: column; justify-content: center; }
+.hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 5rem; position: relative; }
+.hero-left { padding: 8rem 4rem; display: flex; flex-direction: column; justify-content: center; z-index: 2; }
 .hero-tag { font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--red); margin-bottom: 1.5rem; font-weight: 500; }
-.hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.4rem, 4vw, 4.5rem); font-weight: 900; line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 1.5rem; }
+.hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 5vw, 4.5rem); font-weight: 900; line-height: 1.1; margin-bottom: 1.5rem; }
 .hero h1 em { font-style: italic; color: var(--red); }
-.hero-sub { font-size: 1rem; color: var(--gray); max-width: 420px; line-height: 1.7; margin-bottom: 2.5rem; }
-.hero-cta { display: inline-flex; align-items: center; gap: 0.8rem; text-decoration: none; color: var(--cream); font-size: 0.82rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; border-bottom: 2px solid var(--red); padding-bottom: 3px; transition: gap 0.2s; }
-.hero-cta:hover { gap: 1.2rem; }
-.hero-right { background: var(--black); display: flex; flex-direction: column; justify-content: flex-end; padding: 4rem; position: relative; overflow: hidden; }
+.hero-sub { font-size: 1.1rem; color: var(--gray); max-width: 450px; margin-bottom: 2.5rem; }
 
-@keyframes flotar {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-30px); }
-  100% { transform: translateY(0px); }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+.hero-right { background: var(--dark-gray); position: relative; overflow: hidden; display: flex; align-items: flex-end; padding: 4rem; }
+.hero-right::before { 
+  content: 'GC'; position: absolute; top: -2rem; right: -2rem; 
+  font-family: 'Playfair Display', serif; font-size: 20rem; font-weight: 900; 
+  color: rgba(255, 255, 255, 0.02); animation: float 6s infinite ease-in-out; 
 }
 
-.hero-right::before { 
-  content: 'GC'; 
-  position: absolute; 
-  top: -2rem; right: -1rem; 
-  font-
+/* =========================================
+   CARRUSEL "ESTILO NETFLIX"
+   ========================================= */
+.proyectos-showcase {
+  display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+  gap: 2rem; padding: 2rem 0; scrollbar-width: none;
+}
+.proyectos-showcase::-webkit-scrollbar { display: none; }
+
+.proyecto-card {
+  flex: 0 0 350px; scroll-snap-align: start;
+  background: var(--dark-gray); border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 12px; padding: 1.5rem; transition: 0.4s;
+  display: flex; flex-direction: column; gap: 1rem;
+}
+.proyecto-card:hover { transform: translateY(-10px); border-color: var(--yellow); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+.proyecto-portada { width: 100%; height: 220px; object-fit: cover; border-radius: 6px; }
+.mini-resumen { font-size: 0.9rem; color: var(--gray); height: 4.5rem; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+
+.btn-ver-mas {
+  background: transparent; color: var(--yellow); border: 1px solid var(--yellow);
+  padding: 0.8rem; border-radius: 30px; font-weight: bold; cursor: pointer;
+  text-transform: uppercase; font-size: 0.7rem; transition: 0.3s;
+}
+.btn-ver-mas:hover { background: var(--yellow); color: var(--black); }
+
+/* =========================================
+   MODAL (VENTANA EMERGENTE)
+   ========================================= */
+.modal-proyecto {
+  display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9); backdrop-filter: blur(15px); z-index: 2000;
+  overflow-y: auto; padding: 2rem;
+}
+.modal-proyecto.activo { display: block; animation: fadeIn 0.4s; }
+.modal-contenido { 
+  max-width: 1100px; margin: 4rem auto; background: var(--black); 
+  border: 1px solid rgba(255,255,255,0.1); padding: 4rem; border-radius: 15px; position: relative;
+}
+.btn-cerrar { 
+  position: absolute; top: 2rem; right: 2rem; background: none; border: none;
+  color: var(--cream); font-size: 3rem; cursor: pointer; opacity: 0.5;
+}
+.btn-cerrar:hover { opacity: 1; color: var(--red); }
+
+/* DETALLE DENTRO DEL MODAL */
+.caso { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+.metric { 
+  display: flex; align-items: center; gap: 1rem; padding: 1rem;
+  background: rgba(255,255,255,0.03); border-radius: 8px; margin-bottom: 1rem;
+}
+.metric-num { font-size: 2rem; color: var(--yellow); font-family: 'Playfair Display'; }
+
+/* GALLERY INSIDE MODAL */
+.carrusel-tech { display: flex; overflow-x: auto; gap: 15px; padding-bottom: 20px; }
+.carrusel-tech img { flex: 0 0 80%; height: 400px; object-fit: cover; border-radius: 10px; }
+
+/* =========================================
+   SECCIONES EXTRAS
+   ========================================= */
+section { padding: 8rem 4rem; }
+.section-tag { color: var(--red); text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.7rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 10px; }
+.section-tag::after { content: ''; width: 50px; height: 1px; background: var(--red); }
+
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+.skill-item { padding: 1.5rem; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; }
+
+.contacto { background: var(--red); color: white; border-radius: 20px; margin: 0 4rem 4rem; text-align: center; }
+.btn-contacto { 
+  display: inline-block; padding: 1rem 2rem; border-radius: 50px; font-weight: bold; 
+  text-decoration: none; color: white; margin: 10px; transition: 0.3s;
+}
+.wa { background: #25D366; } .in { background: #0077B5; } .ig { background: #E1306C; }
+
+footer { padding: 4rem; text-align: center; opacity: 0.3; font-size: 0.8rem; border-top: 1px solid rgba(255,255,255,0.05); }
+
+@keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+
+@media (max-width: 768px) {
+  nav { padding: 1rem 2rem; flex-direction: column; }
+  .hero, .caso { grid-template-columns: 1fr; }
+  section { padding: 4rem 2rem; }
+  .contacto { margin: 0 2rem 2rem; }
+}
