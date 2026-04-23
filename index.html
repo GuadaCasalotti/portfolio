@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -55,7 +55,7 @@
     <section id="sobre" class="diff-grid">
         <div class="diff-header">
             <h2 class="serif">Mi <br>diferencial.</h2>
-        <div class="retrato-guada">
+            <div class="retrato-guada">
                 <img src="guada-retrato.png" alt="Guada Casalotti">
             </div>
         </div>
@@ -130,8 +130,7 @@
         <div class="modal-content">
             <span class="close-modal" onclick="cerrarModal()">&times;</span>
             <h2 id="modal-title" class="serif"></h2>
-            <div class="modal-body">
-                </div>
+            <div class="modal-body"></div>
         </div>
     </div>
 
@@ -153,28 +152,28 @@
                 <div class="exp-meta">2022 — ACTUALIDAD</div>
                 <div class="exp-info">
                     <h3>Comunicadora Digital & SMM (Freelance)</h3>
-                    <p>Desarrollo de estrategias integrales y aplicación de IA para producir contenido técnico/complejo[cite: 7, 76]. Redacción SEO y gestión WordPress.</p>
+                    <p>Desarrollo de estrategias integrales y aplicación de IA para producir contenido técnico/complejo. Redacción SEO y gestión WordPress.</p>
                 </div>
             </div>
             <div class="exp-item">
                 <div class="exp-meta">2024 — 2025</div>
                 <div class="exp-info">
                     <h3>Coordinadora de Branding & Content Strategist (AC Comunicación)</h3>
-                    <p>Liderazgo de equipo, diseño de estrategias B2B/B2C y definición de lineamientos editoriales[cite: 76, 113]. Logro: +500% de alcance orgánico en proyectos clave.</p>
+                    <p>Liderazgo de equipo, diseño de estrategias B2B/B2C y definición de lineamientos editoriales. Logro: +500% de alcance orgánico en proyectos clave.</p>
                 </div>
             </div>
             <div class="exp-item">
                 <div class="exp-meta">2022 — 2023</div>
                 <div class="exp-info">
                     <h3>Prensa y Comunicación (Ministerio de Infraestructura)</h3>
-                    <p>Cobertura de eventos, diseño de calendarios y traducción de información técnica/estatal en mensajes claros de valor para la comunidad[cite: 115].</p>
+                    <p>Cobertura de eventos, diseño de calendarios y traducción de información técnica/estatal en mensajes claros de valor para la comunidad.</p>
                 </div>
             </div>
             <div class="exp-item">
                 <div class="exp-meta">2017 — 2020</div>
                 <div class="exp-info">
                     <h3>Periodista Cultural & Redactora (FM Boedo, Rev. Rabia)</h3>
-                    <p>Redacción de crónicas, entrevistas y artículos con enfoque SEO[cite: 78, 106]. +45 publicaciones que aplican storytelling para conectar con audiencias.</p>
+                    <p>Redacción de crónicas, entrevistas y artículos con enfoque SEO. +45 publicaciones que aplican storytelling para conectar con audiencias.</p>
                 </div>
             </div>
         </div>
@@ -208,47 +207,42 @@
     </footer>
 
     <script>
-        // --- BASE DE DATOS DE CONTENIDO ESTRATÉGICO ---
         const infoProyectos = {
             'Feria del Centro': `
                 <h3 style="color: var(--neon); margin-bottom: 1rem; font-size: 1.2rem;">Estrategia Integral</h3>
-                <p>Liderazgo de la comunicación para un evento cultural interprovincial masivo[cite: 113]. Diseñamos una narrativa centrada en la identidad regional y la cercanía para potenciar la asistencia.</p>
-                <p><strong>Resultados:</strong> +100k vistas orgánicas, +4.000 nuevos seguidores y un "Sold Out" total en solo 3 días de evento[cite: 114].</p>
+                <p>Liderazgo de la comunicación para un evento cultural interprovincial masivo. Diseñamos una narrativa centrada en la identidad regional y la cercanía para potenciar la asistencia.</p>
+                <p><strong>Resultados:</strong> +100k vistas orgánicas, +4.000 nuevos seguidores y un "Sold Out" total en solo 3 días de evento.</p>
             `,
             'FLINN': `
                 <h3 style="color: var(--neon); margin-bottom: 1rem; font-size: 1.2rem;">Traducción de Complejidad</h3>
-                <p>FLINN (ingeniería CFD/FEA) necesitaba pasar de una comunicación estrictamente técnica a una comercial para atraer decisores en Oil & Gas y sectores satelitales[cite: 14, 87].</p>
-                <p>Implementamos el uso de <strong>IA generativa (Gemini Pro)</strong> para crear visuales de alto impacto cuando los proyectos reales estaban bajo acuerdos de confidencialidad[cite: 88, 71].</p>
+                <p>FLINN (ingeniería CFD/FEA) necesitaba pasar de una comunicación estrictamente técnica a una comercial para atraer decisores en Oil & Gas y sectores satelitales.</p>
+                <p>Implementamos el uso de <strong>IA generativa (Gemini Pro)</strong> para crear visuales de alto impacto cuando los proyectos reales estaban bajo acuerdos de confidencialidad.</p>
             `,
             'Escuelas Sustentables': `
                 <h3 style="color: var(--neon); margin-bottom: 1rem; font-size: 1.2rem;">Comunicación con Propósito</h3>
-                <p>Coordinación de calendarios y prensa para el Concurso HINS, logrando cobertura en casi todos los departamentos de Córdoba[cite: 115, 116].</p>
-                <p><strong>Impacto:</strong> Superamos la meta de proyectos inscriptos en un 100% y recibimos 4 premios por impacto social, educativo y ambiental[cite: 116].</p>
+                <p>Coordinación de calendarios y prensa para el Concurso HINS, logrando cobertura en casi todos los departamentos de Córdoba.</p>
+                <p><strong>Impacto:</strong> Superamos la meta de proyectos inscriptos en un 100% y recibimos 4 premios por impacto social, educativo y ambiental.</p>
             `,
             'Cumbre de Economía Circular': `
                 <h3 style="color: var(--neon); margin-bottom: 1rem; font-size: 1.2rem;">Gestión en Tiempo Real</h3>
-                <p>Diseño de estrategia para 3 ediciones de esta cumbre internacional, incluyendo la cobertura en vivo por Instagram, YouTube y X[cite: 117].</p>
-                <p>El desafío fue coordinar un equipo de cobertura y sostener la comunicación estratégica durante los 6 meses previos a cada edición[cite: 117].</p>
+                <p>Diseño de estrategia para 3 ediciones de esta cumbre internacional, incluyendo la cobertura en vivo por Instagram, YouTube y X.</p>
+                <p>El desafío fue coordinar un equipo de cobertura y sostener la comunicación estratégica durante los 6 meses previos a cada edición.</p>
             `,
             'Único Juegos': `
                 <h3 style="color: var(--neon); margin-bottom: 1rem; font-size: 1.2rem;">Posicionamiento Lifestyle</h3>
-                <p>Transformamos la identidad de un parque de juegos en un destino integral de "Playa Chic" en el Lago Piedras Moras[cite: 95, 98].</p>
-                <p>Estrategia Instagram-first enfocada en comunidad, gastronomía saludable y juegos con propósito de desarrollo infantil[cite: 97, 99].</p>
+                <p>Transformamos la identidad de un parque de juegos en un destino integral de "Playa Chic" en el Lago Piedras Moras.</p>
+                <p>Estrategia Instagram-first enfocada en comunidad, gastronomía saludable y juegos con propósito de desarrollo infantil.</p>
             `,
             'Trabajo Periodístico': `
                 <h3 style="color: var(--neon); margin-bottom: 1rem; font-size: 1.2rem;">Sensibilidad Editorial</h3>
-                <p>Mi formación como periodista cultural me permite aplicar el <strong>storytelling</strong> para conectar marcas con audiencias reales de forma genuina[cite: 78, 106].</p>
-                <p>Aporto una mirada crítica donde la tipografía y una postura clara son protagonistas, inspirada en estéticas de revistas culturales[cite: 106].</p>
+                <p>Mi formación como periodista cultural me permite aplicar el <strong>storytelling</strong> para conectar marcas con audiencias reales de forma genuina.</p>
+                <p>Aporto una mirada crítica donde la tipografía y una postura clara son protagonistas, inspirada en estéticas de revistas culturales.</p>
             `
         };
 
-        // --- FUNCIONES DEL MODAL ---
         function abrirModal(idProyecto) {
-            const titulo = idProyecto;
-            const contenido = infoProyectos[idProyecto] || "<p>Contenido en desarrollo...</p>";
-            
-            document.getElementById('modal-title').innerText = titulo;
-            document.querySelector('.modal-body').innerHTML = contenido;
+            document.getElementById('modal-title').innerText = idProyecto;
+            document.querySelector('.modal-body').innerHTML = infoProyectos[idProyecto] || "<p>Contenido en desarrollo...</p>";
             document.getElementById('proyecto-modal').style.display = 'flex';
         }
 
@@ -256,10 +250,8 @@
             document.getElementById('proyecto-modal').style.display = 'none';
         }
 
-        // --- MOTOR DEL CARRUSEL ---
         const wrapper = document.querySelector('.gallery-wrapper');
         let isInteracting = false;
-
         wrapper.addEventListener('mouseenter', () => isInteracting = true);
         wrapper.addEventListener('mouseleave', () => isInteracting = false);
         wrapper.addEventListener('touchstart', () => isInteracting = true);
@@ -268,9 +260,7 @@
         function autoScrollGallery() {
             if (!isInteracting) {
                 wrapper.scrollLeft += 1; 
-                if (wrapper.scrollLeft >= wrapper.scrollWidth / 2) {
-                    wrapper.scrollLeft = 0;
-                }
+                if (wrapper.scrollLeft >= wrapper.scrollWidth / 2) wrapper.scrollLeft = 0;
             }
             requestAnimationFrame(autoScrollGallery);
         }
