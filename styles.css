@@ -107,7 +107,7 @@ em { font-family: var(--font-serif); font-style: italic; }
     flex-direction: column; 
     justify-content: center; 
     animation: syncColorsRight 3s infinite; 
-    animation-delay: -1.5s; /* ESTA LÍNEA CREA EL CONTRATIEMPO */
+    animation-delay: -2s; /* ESTA LÍNEA CREA EL CONTRATIEMPO */
     transition: background-color 0.4s ease;
 }.hero-right-text h1 { font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 4rem); line-height: 0.95; color: var(--canvas); }
 
