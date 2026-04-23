@@ -116,12 +116,12 @@
                     <div class="p-label">06 // TRABAJO PERIODÍSTICO</div>
                 </div>
 
-                <div class="gallery-item" onclick="abrirModal('Feria del Centro')"><div class="p-img-wrapper"><img src="feria-del-centro.png" alt="01"><div class="p-overlay"><span class="btn-ver-mas">VER MÁS ↗</span></div></div><div class="p-label">01 // FERIA DEL CENTRO</div></div>
-                <div class="gallery-item" onclick="abrirModal('FLINN')"><div class="p-img-wrapper"><img src="linkedin-flinn.png" alt="02"><div class="p-overlay"><span class="btn-ver-mas">VER MÁS ↗</span></div></div><div class="p-label">02 // FLINN</div></div>
-                <div class="gallery-item" onclick="abrirModal('Escuelas Sustentables')"><div class="p-img-wrapper"><img src="premio-concurso-1.png" alt="03"><div class="p-overlay"><span class="btn-ver-mas">VER MÁS ↗</span></div></div><div class="p-label">03 // ESC. SUSTENTABLES</div></div>
-                <div class="gallery-item" onclick="abrirModal('Cumbre de Economía Circular')"><div class="p-img-wrapper"><img src="proyecto-4.png" alt="04"><div class="p-overlay"><span class="btn-ver-mas">VER MÁS ↗</span></div></div><div class="p-label">04 // CUMBRE DE ECONOMÍA CIRCULAR</div></div>
-                <div class="gallery-item" onclick="abrirModal('Único Juegos')"><div class="p-img-wrapper"><img src="proyecto-5.png" alt="05"><div class="p-overlay"><span class="btn-ver-mas">VER MÁS ↗</span></div></div><div class="p-label">05 // ÚNICO JUEGOS</div></div>
-                <div class="gallery-item" onclick="abrirModal('Trabajo Periodístico')"><div class="p-img-wrapper"><img src="proyecto-6.png" alt="06"><div class="p-overlay"><span class="btn-ver-mas">VER MÁS ↗</span></div></div><div class="p-label">06 // TRABAJO PERIODÍSTICO</div></div>
+                <div class="gallery-item" onclick="abrirModal('Feria del Centro')"><div class="p-img-wrapper"><img src="feria-del-centro.png" alt="01"></div><div class="p-label">01 // FERIA DEL CENTRO</div></div>
+                <div class="gallery-item" onclick="abrirModal('FLINN')"><div class="p-img-wrapper"><img src="linkedin-flinn.png" alt="02"></div><div class="p-label">02 // FLINN</div></div>
+                <div class="gallery-item" onclick="abrirModal('Escuelas Sustentables')"><div class="p-img-wrapper"><img src="premio-concurso-1.png" alt="03"></div><div class="p-label">03 // ESC. SUSTENTABLES</div></div>
+                <div class="gallery-item" onclick="abrirModal('Cumbre de Economía Circular')"><div class="p-img-wrapper"><img src="proyecto-4.png" alt="04"></div><div class="p-label">04 // CUMBRE DE ECONOMÍA CIRCULAR</div></div>
+                <div class="gallery-item" onclick="abrirModal('Único Juegos')"><div class="p-img-wrapper"><img src="proyecto-5.png" alt="05"></div><div class="p-label">05 // ÚNICO JUEGOS</div></div>
+                <div class="gallery-item" onclick="abrirModal('Trabajo Periodístico')"><div class="p-img-wrapper"><img src="proyecto-6.png" alt="06"></div><div class="p-label">06 // TRABAJO PERIODÍSTICO</div></div>
             </div>
         </div>
     </section>
@@ -208,54 +208,25 @@
 
     <script>
         const infoProyectos = {
-            'Feria del Centro': `
-                <h3 style="color: var(--neon); margin-bottom: 1rem; font-size: 1.2rem;">Estrategia Integral</h3>
-                <p>Liderazgo de la comunicación para un evento cultural interprovincial masivo. Diseñamos una narrativa centrada en la identidad regional y la cercanía para potenciar la asistencia.</p>
-                <p><strong>Resultados:</strong> +100k vistas orgánicas, +4.000 nuevos seguidores y un "Sold Out" total en solo 3 días de evento.</p>
-            `,
-            'FLINN': `
-                <h3 style="color: var(--neon); margin-bottom: 1rem; font-size: 1.2rem;">Traducción de Complejidad</h3>
-                <p>FLINN (ingeniería CFD/FEA) necesitaba pasar de una comunicación estrictamente técnica a una comercial para atraer decisores en Oil & Gas y sectores satelitales.</p>
-                <p>Implementamos el uso de <strong>IA generativa (Gemini Pro)</strong> para crear visuales de alto impacto cuando los proyectos reales estaban bajo acuerdos de confidencialidad.</p>
-            `,
-            'Escuelas Sustentables': `
-                <h3 style="color: var(--neon); margin-bottom: 1rem; font-size: 1.2rem;">Comunicación con Propósito</h3>
-                <p>Coordinación de calendarios y prensa para el Concurso HINS, logrando cobertura en casi todos los departamentos de Córdoba.</p>
-                <p><strong>Impacto:</strong> Superamos la meta de proyectos inscriptos en un 100% y recibimos 4 premios por impacto social, educativo y ambiental.</p>
-            `,
-            'Cumbre de Economía Circular': `
-                <h3 style="color: var(--neon); margin-bottom: 1rem; font-size: 1.2rem;">Gestión en Tiempo Real</h3>
-                <p>Diseño de estrategia para 3 ediciones de esta cumbre internacional, incluyendo la cobertura en vivo por Instagram, YouTube y X.</p>
-                <p>El desafío fue coordinar un equipo de cobertura y sostener la comunicación estratégica durante los 6 meses previos a cada edición.</p>
-            `,
-            'Único Juegos': `
-                <h3 style="color: var(--neon); margin-bottom: 1rem; font-size: 1.2rem;">Posicionamiento Lifestyle</h3>
-                <p>Transformamos la identidad de un parque de juegos en un destino integral de "Playa Chic" en el Lago Piedras Moras.</p>
-                <p>Estrategia Instagram-first enfocada en comunidad, gastronomía saludable y juegos con propósito de desarrollo infantil.</p>
-            `,
-            'Trabajo Periodístico': `
-                <h3 style="color: var(--neon); margin-bottom: 1rem; font-size: 1.2rem;">Sensibilidad Editorial</h3>
-                <p>Mi formación como periodista cultural me permite aplicar el <strong>storytelling</strong> para conectar marcas con audiencias reales de forma genuina.</p>
-                <p>Aporto una mirada crítica donde la tipografía y una postura clara son protagonistas, inspirada en estéticas de revistas culturales.</p>
-            `
+            'Feria del Centro': `<h3>Estrategia Integral</h3><p>Liderazgo de la comunicación para un evento cultural interprovincial masivo. +100k vistas orgánicas y Sold Out en 3 días.</p>`,
+            'FLINN': `<h3>Traducción de Complejidad</h3><p>Ingeniería CFD/FEA. Pasamos de una comunicación técnica a una comercial usando IA para visuales de alto impacto.</p>`,
+            'Escuelas Sustentables': `<h3>Comunicación con Propósito</h3><p>Coordinación de prensa para el Concurso HINS. Superamos la meta de inscriptos en un 100%.</p>`,
+            'Cumbre de Economía Circular': `<h3>Gestión en Tiempo Real</h3><p>Estrategia y cobertura en vivo para cumbre internacional con líderes globales de sustentabilidad.</p>`,
+            'Único Juegos': `<h3>Posicionamiento Lifestyle</h3><p>Transformamos un parque de juegos en un destino "Playa Chic" con estrategia Instagram-first.</p>`,
+            'Trabajo Periodístico': `<h3>Sensibilidad Editorial</h3><p>Aplicación de storytelling periodístico para conectar marcas con audiencias reales de forma genuina.</p>`
         };
 
-        function abrirModal(idProyecto) {
-            document.getElementById('modal-title').innerText = idProyecto;
-            document.querySelector('.modal-body').innerHTML = infoProyectos[idProyecto] || "<p>Contenido en desarrollo...</p>";
+        function abrirModal(id) {
+            document.getElementById('modal-title').innerText = id;
+            document.querySelector('.modal-body').innerHTML = infoProyectos[id] || "<p>En desarrollo...</p>";
             document.getElementById('proyecto-modal').style.display = 'flex';
         }
-
-        function cerrarModal() {
-            document.getElementById('proyecto-modal').style.display = 'none';
-        }
+        function cerrarModal() { document.getElementById('proyecto-modal').style.display = 'none'; }
 
         const wrapper = document.querySelector('.gallery-wrapper');
         let isInteracting = false;
         wrapper.addEventListener('mouseenter', () => isInteracting = true);
         wrapper.addEventListener('mouseleave', () => isInteracting = false);
-        wrapper.addEventListener('touchstart', () => isInteracting = true);
-        wrapper.addEventListener('touchend', () => { setTimeout(() => isInteracting = false, 1500); });
 
         function autoScrollGallery() {
             if (!isInteracting) {
