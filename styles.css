@@ -45,9 +45,9 @@ em { font-family: var(--font-serif); font-style: italic; }
 .hero-left-dynamic { display: flex; justify-content: center; align-items: center; position: relative; animation: syncColorsLeft 3s infinite; }
 .shape-container { width: 80%; height: 80%; position: relative; animation: morphShape 3s infinite cubic-bezier(0.77, 0, 0.175, 1); overflow: hidden; z-index: 1; }
 .slide-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; animation: fadeImages 3s infinite; }
-.img-1 { background-image: url('feria-del-centro.png'); animation-delay: 0s; }
-.img-2 { background-image: url('mockup-flinn.png'); animation-delay: 1s; }
-.img-3 { background-image: url('feed-feria.png'); animation-delay: 2s; }
+.img-1 { background-image: url('feria-del-centro.webp'); animation-delay: 0s; }
+.img-2 { background-image: url('feed-flinn.webp'); animation-delay: 1s; }
+.img-3 { background-image: url('feed-feria.webp'); animation-delay: 2s; }
 .hero-stats { position: absolute; z-index: 10; bottom: 15%; display: flex; flex-direction: column; align-items: center; width: 100%; }
 .stat-pill { position: absolute; background: var(--ink); color: var(--canvas); padding: 12px 25px; border-radius: 50px; font-weight: bold; opacity: 0; animation: fadeStats 3s infinite; text-align: center; max-width: 85%; }
 .stat-1 { animation-delay: 0s; }
