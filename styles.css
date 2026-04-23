@@ -80,8 +80,8 @@ em { font-family: var(--font-serif); font-style: italic; }
     animation: fadeImages 3s infinite; 
 }
 .img-1 { background-image: url('feria-del-centro.png'); animation-delay: 0s; }
-.img-2 { background-image: url('linkedin-flinn.png'); animation-delay: 1s; }
-.img-3 { background-image: url('recis.png'); animation-delay: 2s; }
+.img-2 { background-image: url('mockup-flinn.png'); animation-delay: 1s; }
+.img-3 { background-image: url('feed-feria.png'); animation-delay: 2s; }
 
 /* --- GLOBLITOS MÉTRICAS --- */
 .hero-stats { position: absolute; z-index: 10; bottom: 15%; display: flex; flex-direction: column; align-items: center; width: 100%; pointer-events: none;}
@@ -136,6 +136,29 @@ em { font-family: var(--font-serif); font-style: italic; }
 .diff-content { padding: 4rem; display: flex; flex-direction: column; gap: 1.5rem; }
 .diff-content p { font-size: clamp(1.1rem, 1.5vw, 1.35rem); line-height: 1.6; max-width: 65ch; margin-bottom: 0;}
 .diff-content p span { background: var(--neon); color: var(--canvas); padding: 0 8px; font-weight: 700; }
+/* --- RETRATO GUADA --- */
+.retrato-guada {
+    margin-top: 3rem;
+    width: 100%;
+    max-width: 250px;
+    height: 320px;
+    border-radius: 150px 150px 0 0; /* Esto le da la forma de arco elegante */
+    overflow: hidden;
+    border: 1px solid var(--line);
+}
+
+.retrato-guada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(1); /* Arranca en blanco y negro para mantener la estética */
+    transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.retrato-guada:hover img {
+    filter: grayscale(0); /* Se pone a color al pasar el mouse */
+    transform: scale(1.05); /* Pequeño zoom sutil */
+}
 
 /* --- PROYECTOS --- */
 .projects-section { padding: 6rem 0; border-bottom: 1px solid var(--line); background-color: #F1EFE3; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150'><text x='20' y='40' font-size='24' fill='%231A1A1A' opacity='0.03'>☺</text><text x='90' y='90' font-size='24' fill='%231A1A1A' opacity='0.03'>✺</text><text x='40' y='130' font-size='24' fill='%231A1A1A' opacity='0.03'>✎</text></svg>");}
