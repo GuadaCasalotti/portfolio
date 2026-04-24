@@ -74,8 +74,30 @@ em { font-family: var(--font-serif); font-style: italic; }
 .gallery-wrapper { width: 100%; overflow-x: auto; scrollbar-width: thin; scrollbar-color: var(--neon) rgba(26,26,26,0.05); }
 .gallery-track { display: flex; gap: 3rem; width: max-content; padding: 0 2rem 2rem 4rem; }
 .gallery-item { width: 450px; flex-shrink: 0; cursor: pointer; }
-.p-img-wrapper { width: 100%; aspect-ratio: 4/5; background: var(--ink); overflow: hidden; position: relative; }
-.p-img-wrapper img { width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: grayscale(1); transition: 0.8s; }
+.p-img-wrapper { 
+    width: 100%; 
+    aspect-ratio: 3/2;
+    background: var(--ink); 
+    overflow: hidden; 
+    position: relative; 
+}
+.p-img-wrapper img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    object-position: center center;
+    filter: grayscale(1); 
+    transition: 0.8s; 
+}
+
+/* Ajuste por imagen específica */
+.gallery-item:nth-child(1) .p-img-wrapper img { object-position: center 30%; }
+.gallery-item:nth-child(2) .p-img-wrapper img { object-position: center center; }
+.gallery-item:nth-child(3) .p-img-wrapper img { object-position: center top; }
+.gallery-item:nth-child(4) .p-img-wrapper img { object-position: center center; }
+.gallery-item:nth-child(5) .p-img-wrapper img { object-position: center center; }
+.gallery-item:nth-child(6) .p-img-wrapper img { object-position: center center; }
+
 .gallery-item:hover img { filter: grayscale(0); }
 .p-overlay { position: absolute; top: 0; width: 100%; height: 100%; background: rgba(26,26,26,0.7); display: flex; align-items: center; justify-content: center; opacity: 0; transition: 0.3s; }
 .gallery-item:hover .p-overlay { opacity: 1; }
@@ -126,4 +148,18 @@ em { font-family: var(--font-serif); font-style: italic; }
     .exp-item { grid-template-columns: 1fr; padding: 2rem; }
     .nav-center { display: none; }
     .nav-grid { grid-template-columns: 1fr 1fr; }
+    /* Imágenes dentro de modales sin fondo ni borde */
+.modal-body img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+.modal-body div[style*="background"] {
+    background: transparent !important;
+    border: none !important;
+}
 }
