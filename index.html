@@ -490,11 +490,27 @@
     </div>
   `,        };
 
-        function abrirModal(id) {
+       function abrirModal(id) {
             document.getElementById('modal-title').innerText = id;
             document.querySelector('.modal-body').innerHTML = infoProyectos[id] || "<p>En desarrollo...</p>";
             document.getElementById('proyecto-modal').style.display = 'flex';
-        }
+            
+            setTimeout(() => {
+                // 1. Método infalible: obliga a la vista a saltar directo al título
+                const titulo = document.getElementById('modal-title');
+                if (titulo) {
+                    titulo.scrollIntoView({ behavior: 'instant', block: 'start' });
+                }
+                
+                // 2. Por si acaso, "le disparamos a todo" lo que pueda llegar a tener el scroll
+                document.getElementById('proyecto-modal').scrollTop = 0;
+                document.querySelector('.modal-body').scrollTop = 0;
+                
+                // Si existe un contenedor extra, también lo mandamos a cero
+                const contenedorExtra = document.querySelector('.modal-content');
+                if (contenedorExtra) contenedorExtra.scrollTop = 0;
+            }, 15);
+       }
 function cerrarModal() { document.getElementById('proyecto-modal').style.display = 'none'; }
 
 document.getElementById('proyecto-modal').addEventListener('click', function(e) {
