@@ -44,7 +44,16 @@ em { font-family: var(--font-serif); font-style: italic; }
 /* HERO */
 .hero-split { display: grid; grid-template-columns: 1fr 1fr; height: 90vh; border-bottom: 1px solid var(--line); overflow: hidden; }
 .hero-left-dynamic { display: flex; justify-content: center; align-items: center; position: relative; animation: syncColorsLeft 3s infinite cubic-bezier(0.77, 0, 0.175, 1); }
-.shape-container { width: 80%; height: 80%; position: relative; animation: morphShape 3s infinite cubic-bezier(0.77, 0, 0.175, 1); overflow: hidden; z-index: 1; }
+.shape-container { 
+    width: 80%; 
+    max-width: 500px; /* Le ponemos un límite de ancho para que no se descontrole en monitores gigantes */
+    aspect-ratio: 4 / 5; /* LA MAGIA: Obliga a la caja a ser siempre un rectángulo vertical editorial */
+    max-height: 85%; /* Evita que desborde hacia abajo */
+    position: relative; 
+    animation: morphShape 3s infinite cubic-bezier(0.77, 0, 0.175, 1); 
+    overflow: hidden; 
+    z-index: 1; 
+}
 .slide-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; animation: fadeImages 3s infinite cubic-bezier(0.77, 0, 0.175, 1); }
 .img-1 { background-image: url('feria-del-centro.webp'); animation-delay: 0s; }
 .img-2 { background-image: url('concurso-escuelas.webp'); animation-delay: -2s; }
@@ -139,10 +148,17 @@ em { font-family: var(--font-serif); font-style: italic; }
 }
 
 @keyframes morphShape { 
-    0%, 28% { clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); } 
-    33.33%, 61.33% { clip-path: inset(5% 5% 5% 5% round 150px 20px 100px 40px); } 
-    66.66%, 94.66% { clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); } 
-    100% { clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); } 
+    /* 1. Tu rectángulo orgánico favorito (traducido a % exactos para que NO se rompa a cuadrado) */
+    0%, 28% { clip-path: inset(0% 0% 0% 0% round 30% 4% 20% 8%); } 
+    
+    /* 2. El Arco Editorial perfecto (como se ve en tu captura 1) */
+    33.33%, 61.33% { clip-path: inset(0% 0% 0% 0% round 45% 45% 2% 2%); } 
+    
+    /* 3. La forma de gota/hoja súper suave */
+    66.66%, 94.66% { clip-path: inset(0% 0% 0% 0% round 5% 35% 5% 35%); } 
+    
+    /* Cierre perfecto */
+    100% { clip-path: inset(0% 0% 0% 0% round 30% 4% 20% 8%); } 
 }
 
 @keyframes fadeImages { 
