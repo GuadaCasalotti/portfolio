@@ -65,7 +65,7 @@ em { font-family: var(--font-serif); font-style: italic; }
 .stat-1 { animation-delay: 0s; }
 .stat-2 { animation-delay: -2s; }
 .stat-3 { animation-delay: -1s; }
-.hero-right-text { padding: 0 4rem; /display: flex;  flex-direction: column; justify-content: center; background-color: var(--ink); color: var(--canvas); }
+.hero-right-text { padding: 3rem 4rem 0 4rem; display: flex;  flex-direction: column; justify-content: center; background-color: var(--ink); color: var(--canvas); }
 .hero-right-text h1 { font-family: var(--font-serif); font-size: clamp(2rem, 3.8vw, 3.5rem); line-height: 1.1; margin-bottom: 0; }
 .emoji-changer::after { content: '☺'; font-size: 3.5rem; animation: changeEmoji 3s infinite; display: block; margin-top: 1rem; }
 
