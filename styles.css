@@ -55,28 +55,22 @@ em { font-family: var(--font-serif); font-style: italic; }
 /* HERO */
 .hero-split { display: grid; grid-template-columns: 1fr 1fr; height: 90vh; border-bottom: 1px solid var(--line); overflow: hidden; }
 .hero-left-dynamic { display: flex; justify-content: center; align-items: center; position: relative; animation: syncColorsLeft 3s infinite cubic-bezier(0.77, 0, 0.175, 1); }
-.shape-container { 
-    width: 80%; max-width: 500px; aspect-ratio: 4 / 5; max-height: 85%; 
-    position: relative; animation: morphShape 3s infinite cubic-bezier(0.77, 0, 0.175, 1); overflow: hidden; z-index: 1; 
-}
+.shape-container { width: 75%; max-width: 450px; aspect-ratio: 4 / 5; max-height: 80%; position: relative; animation: morphShape 3s infinite cubic-bezier(0.77, 0, 0.175, 1); overflow: hidden; z-index: 1; }
 .slide-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; animation: fadeImages 3s infinite cubic-bezier(0.77, 0, 0.175, 1); }
 .img-1 { background-image: url('feria-del-centro.webp'); animation-delay: 0s; }
 .img-2 { background-image: url('concurso-escuelas.webp'); animation-delay: -2s; }
 .img-3 { background-image: url('cumbre-2.webp'); animation-delay: -1s; }
-.hero-stats { position: absolute; z-index: 10; bottom: 15%; display: flex; flex-direction: column; align-items: center; width: 100%; }
-.stat-pill { position: absolute; background: var(--ink); color: var(--canvas); padding: 12px 25px; border-radius: 50px; font-weight: bold; opacity: 0; animation: fadeStats 3s infinite; text-align: center; max-width: 85%; }
+.hero-stats { position: absolute; z-index: 10; bottom: 8%; width: 100%; display: grid; place-items: center; }
+.stat-pill { grid-area: 1 / 1; background: var(--ink); color: var(--canvas); padding: 12px 25px; border-radius: 50px; font-weight: bold; opacity: 0; animation: fadeStats 3s infinite; text-align: center; max-width: 85%; }
 .stat-1 { animation-delay: 0s; }
 .stat-2 { animation-delay: -2s; }
 .stat-3 { animation-delay: -1s; }
-
-.hero-right-text { padding: 4rem; display: flex; flex-direction: column; justify-content: center; background-color: var(--ink); color: var(--canvas); }
-.hero-right-text h1 { font-family: var(--font-serif); font-size: clamp(2rem, 4.5vw, 4.5rem); line-height: 1; }
-.emoji-changer::after { content: '☺'; font-size: 5rem; animation: changeEmoji 3s infinite; display: block; margin-top: 1.5rem; }
+.hero-right-text { padding: 0 4rem; /display: flex;  flex-direction: column; justify-content: center; background-color: var(--ink); color: var(--canvas); }
+.hero-right-text h1 { font-family: var(--font-serif); font-size: clamp(2rem, 3.8vw, 3.5rem); line-height: 1.1; margin-bottom: 0; }
+.emoji-changer::after { content: '☺'; font-size: 3.5rem; animation: changeEmoji 3s infinite; display: block; margin-top: 1rem; }
 
 /* BOTONES PRINCIPALES */
-.cta-button-hero { 
-    margin-top: 2rem; display: inline-block; padding: 15px 35px; background-color: var(--neon); color: var(--canvas); 
-    text-decoration: none; font-weight: 700; border-radius: 50px; width: fit-content; text-transform: uppercase; 
+.cta-button-hero { margin-top: 2rem; display: inline-block; padding: 15px 35px; background-color: var(--neon); color: var(--canvas); text-decoration: none; font-weight: 700; border-radius: 50px; width: fit-content; text-transform: uppercase; 
     letter-spacing: 1px; font-size: 0.9rem; transition: all 0.3s ease; border: 1px solid var(--neon); 
 }
 .cta-button-hero:hover { background-color: transparent; color: var(--neon); }
