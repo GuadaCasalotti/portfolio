@@ -1,0 +1,476 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guada Casalotti | Estrategia digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Playfair+Display:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="image" href="feria-del-centro.webp">
+    <link rel="preload" as="image" href="concurso-escuelas.webp">
+    <link rel="preload" as="image" href="cumbre-2.webp">
+</head>
+<body>
+
+    <div class="marquee-top">
+        <div class="marquee-content">
+            <span> SOCIAL MEDIA MANAGEMENT  |  PERIODISMO CULTURAL  |  COPYWRITING  |  CONTENT STRATEGY  |  BRANDING  |&nbsp;</span>
+            <span> SOCIAL MEDIA MANAGEMENT  |  PERIODISMO CULTURAL  |  COPYWRITING  |  CONTENT STRATEGY  |  BRANDING  |&nbsp;</span>
+            <span> SOCIAL MEDIA MANAGEMENT  |  PERIODISMO CULTURAL  |  COPYWRITING  |  CONTENT STRATEGY  |  BRANDING  |&nbsp;</span>
+        </div>
+    </div>
+
+    <nav class="nav-grid">
+        <div class="nav-left logo" style="display: flex; align-items: center; gap: 10px; white-space: nowrap;">
+            <span>GUADA CASALOTTI</span>
+            <span style="font-family: var(--font-sans); font-size: 0.65rem; font-weight: 400; letter-spacing: 1px; color: var(--canvas); opacity: 0.6; white-space: nowrap;">| DIRECCIÓN Y ESTRATEGIA DIGITAL</span>
+        </div>
+        <div class="nav-center hide-mobile">
+            <a href="#sobre">Enfoque</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="#proyectos">Proyectos Seleccionados</a>
+            <a href="#contacto" class="btn-contacto-nav">Contacto</a>
+        </div>
+    </nav>
+
+    <header class="hero-split">
+        <div class="hero-left-dynamic">
+           <div class="shape-container">
+                <div class="slide-img img-1"></div>
+                <div class="slide-img img-2"></div>
+                <div class="slide-img img-3"></div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-pill stat-1">Estrategias de comunicación orgánica e inorgánica</div>
+                <div class="stat-pill stat-2">Metodología orientada a objetivos</div>
+                <div class="stat-pill stat-3">Gestión de comunicación B2C y B2B</div>
+            </div>
+        </div>
+        <div class="hero-right-text">
+            <h1>Tu negocio comunica incluso cuando no decís nada,<br><em style="color: var(--neon);">¿y si tomás el control?</em></h1>
+            <a href="servicios.html" class="cta-button-hero">VER SOLUCIONES ↗</a>
+            <div class="dynamic-emoji-container">
+                <span class="emoji-changer"></span>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre" class="diff-grid">
+        <div class="diff-header">
+            <h2 class="serif">Mi <br>diferencial.</h2>
+            <div class="retrato-guada">
+                <img src="guada-retrato.webp" alt="Guada Casalotti">
+            </div>
+        </div>
+        <div class="diff-content">
+            <p>Ayudo a personas y marcas a transformar la esencia de su trabajo en autoridad digital y comunidades activas. Como <span>estratega y periodista</span>mi trabajo es asegurar que tu comunicación refleje el nivel de tu profesionalismo y te acerque a tus objetivos comerciales.</p>
+            <p>Mi diferencial no nace de un manual sino de la experiencia empírica: mis años trabajando como periodista cultural y mi paso por el <em>backstage</em>de barras y gastronomía me dieron una perspectiva única. Entiendo el lenguaje, las necesidades, los ritmos y el esfuerzo que sostienen a un servicio o a un proyecto creativo, y transformo sus detalles sutiles en historias potentes.</p>
+            <p>Hoy aplico mi experiencia exclusivamente a los nichos que vivo desde adentro - <strong>la gastronomía, el arte, la cultura y el turismo</strong> - porque creo que no hay estrategia más efectiva que comunicar lo que uno verdaderamente conoce y disfruta. Mi meta es gestionar tu ecosistema digital para que vos puedas enfocarte cien por ciento en crear y dirigir tu proyecto o negocio.</p>
+            
+            <a href="trayectoria.html" style="font-family: var(--font-sans); font-weight: 700; color: var(--neon); text-decoration: none; font-size: 0.95rem; margin-top: 1rem; display: inline-block; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">→ Ver mi recorrido profesional en detalle</a>
+        </div>
+    </section>
+
+    <section id="proyectos" class="projects-section">
+        <div class="projects-header">
+            <h2 class="serif">Proyectos <br>Seleccionados.</h2>
+        </div>
+        
+        <div class="gallery-wrapper">
+            <div class="gallery-track">
+                <div class="gallery-item" onclick="abrirModal('Feria del Centro')">
+                    <div class="p-img-wrapper">
+                        <img src="feria-del-centro.webp" alt="01" loading="eager" style="height: 100%; object-fit: cover; display: block;">
+                        <div class="p-overlay"><span class="btn-ver-mas">VER CASO ↗</span></div>
+                    </div>
+                    <div class="p-label">01 // FERIA DEL CENTRO</div>
+                </div>
+                <div class="gallery-item" onclick="abrirModal('FLINN')">
+                    <div class="p-img-wrapper">
+                        <img src="portada-flinn.webp" alt="02">
+                        <div class="p-overlay"><span class="btn-ver-mas">VER CASO ↗</span></div>
+                    </div>
+                    <div class="p-label">02 // FLINN</div>
+                </div>
+                <div class="gallery-item" onclick="abrirModal('Escuelas Sustentables')">
+                    <div class="p-img-wrapper">
+                        <img src="concurso-escuelas.webp" alt="03">
+                        <div class="p-overlay"><span class="btn-ver-mas">VER CASO ↗</span></div>
+                    </div>
+                    <div class="p-label">03 // CONCURSO ESCUELAS SUSTENTABLES</div>
+                </div>
+                <div class="gallery-item" onclick="abrirModal('Cumbre de Economía Circular')">
+                    <div class="p-img-wrapper">
+                        <img src="4ta-cumbre.webp" alt="04">
+                        <div class="p-overlay"><span class="btn-ver-mas">VER CASO ↗</span></div>
+                    </div>
+                    <div class="p-label">04 // CUMBRE MUNDIAL DE ECONOMÍA CIRCULAR</div>
+                </div>
+                <div class="gallery-item" onclick="abrirModal('Único Juegos')">
+                    <div class="p-img-wrapper">
+                        <img src="unico-imagen.webp" alt="05">
+                        <div class="p-overlay"><span class="btn-ver-mas">VER CASO ↗</span></div>
+                    </div>
+                    <div class="p-label">05 // ÚNICO JUEGOS</div>
+                </div>
+                <div class="gallery-item" onclick="abrirModal('Trabajo Periodístico')">
+                    <div class="p-img-wrapper">
+                        <img src="foto-recital.webp" alt="06">
+                        <div class="p-overlay"><span class="btn-ver-mas">VER CASO ↗</span></div>
+                    </div>
+                    <div class="p-label">06 // TRABAJO PERIODÍSTICO</div>
+                </div>
+
+                <div class="gallery-item" onclick="abrirModal('Feria del Centro')"><div class="p-img-wrapper"><img src="feria-del-centro.webp"><div class="p-overlay"><span class="btn-ver-mas">VER CASO ↗</span></div></div><div class="p-label">01 // FERIA DEL CENTRO</div></div>
+                <div class="gallery-item" onclick="abrirModal('FLINN')"><div class="p-img-wrapper"><img src="portada-flinn.webp"><div class="p-overlay"><span class="btn-ver-mas">VER CASO ↗</span></div></div><div class="p-label">02 // FLINN</div></div>
+                <div class="gallery-item" onclick="abrirModal('Escuelas Sustentables')"><div class="p-img-wrapper"><img src="concurso-escuelas.webp"><div class="p-overlay"><span class="btn-ver-mas">VER CASO ↗</span></div></div><div class="p-label">03 // CONCURSO ESCUELAS SUSTENTABLES</div></div>
+                <div class="gallery-item" onclick="abrirModal('Cumbre de Economía Circular')"><div class="p-img-wrapper"><img src="4ta-cumbre.webp"><div class="p-overlay"><span class="btn-ver-mas">VER CASO ↗</span></div></div><div class="p-label">04 // CUMBRE MUNDIAL DE ECONOMÍA CIRCULAR</div></div>
+                <div class="gallery-item" onclick="abrirModal('Único Juegos')"><div class="p-img-wrapper"><img src="unico-imagen.webp"><div class="p-overlay"><span class="btn-ver-mas">VER CASO ↗</span></div></div><div class="p-label">05 // ÚNICO JUEGOS</div></div>
+                <div class="gallery-item" onclick="abrirModal('Trabajo Periodístico')"><div class="p-img-wrapper"><img src="foto-recital.webp"><div class="p-overlay"><span class="btn-ver-mas">VER CASO ↗</span></div></div><div class="p-label">06 // TRABAJO PERIODÍSTICO</div></div>
+            </div>
+        </div>
+    </section>
+
+    <div id="proyecto-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal" onclick="cerrarModal()">&times;</span>
+            <h2 id="modal-title" class="serif"></h2>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <section class="cta-mid-section" style="padding: 6rem 4rem; text-align: center; background-color: var(--canvas); border-bottom: 1px solid var(--line);">
+        <h2 class="serif" style="font-size: clamp(2rem, 3.5vw, 3rem); margin-bottom: 1.5rem; color: var(--ink);">¿Mi visión resuena <br>con tu <em>proyecto?</em></h2>
+        <a href="servicios.html" class="cta-button-hero btn-oscuro">CONOCÉ MIS SERVICIOS Y SOLUCIONES ↗</a>
+    </section>
+
+    <footer id="contacto" class="contact-split">
+        <div class="contact-left">
+            <div class="contact-wrapper">
+                <span class="neon-text">¿LISTX PARA CONSTRUIR TU PRESENCIA DIGITAL?</span>
+                <h2 class="serif">Charlemos sobre tus <em>proyectos y objetivos!</em></h2>
+                
+                <div class="big-links-stack">
+                    <a href="mailto:guada.figue@gmail.com">guada.figue@gmail.com</a>
+                    <a href="https://wa.link/puh8q9" target="_blank">whatsapp ↗</a>
+                    <a href="https://www.linkedin.com/in/guadacasalotti" target="_blank">linkedin ↗</a>
+                    <a href="https://instagram.com/guada.comunica" target="_blank">instagram ↗</a>
+                </div>
+                
+                <div class="footer-bar">
+                    <span>© 2026 | Guada Casalotti</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-right dynamic-bg">
+            <span class="emoji-changer-footer"></span>
+            <div class="ig-widget-container">
+                <script src="https://elfsightcdn.com/platform.js" async></script>
+                <div class="elfsight-app-8a72144c-eea1-4372-9b5d-b957ac7e3460" data-elfsight-app-lazy></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const infoProyectos = {
+            'Feria del Centro': `
+    <p style="color: var(--cobalt); font-weight: 700; margin-bottom: 1.5rem; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Estrategia de comunicación institucional y política - proyecto cultural con alcance regional</p>
+    <p>La <strong>Feria del Centro</strong> (Córdoba, Santa Fe y Entre Ríos) es un encuentro anual que reúne a emprendedores, artistas y artesanos de las tres provincias en un espacio clave para resaltar el valor y potencial de la cultura regional.</p>
+    <p><strong>El desafío: </strong>Posicionar el evento como de interés federal en un contexto complejo para el sector cultural, resaltando la sinergia entre tres provincias y garantizando tanto la participación de productores como la asistencia masiva del público.</p>
+    <p><strong>Mi rol: </strong>Como parte de la agencia <span style="font-family: var(--font-serif); font-style: italic; font-weight: 900; color: var(--ink);">"Activos Comunicación"</span> co-diseñé y lideré la estrategia digital. Mi gestión abarcó desde el liderazgo de equipos y la curaduría de contenidos hasta la validación estratégica en las etapas de pre, durante y post evento.</p>
+    <div style="width: 100%; margin: 1.5rem 0; overflow: hidden; border-radius: 8px;">
+        <img src="feria-del-centro.webp" alt="Foto del evento" style="width: 100%; max-height: 400px; object-fit: cover; display: block;">
+    </div>
+    <h4 style="color: var(--cobalt); margin-top: 2rem; margin-bottom: 0.5rem; font-size: 1.2rem;">Estrategia 360°</h4>
+    <p>La estrategia se desarrolló en 2 fases 100% orgánicas</p>
+    <ul style="margin: 1.5rem 0; padding-left: 1.2rem; font-size: 0.95rem; line-height: 1.6;">
+        <li style="margin-bottom: 10px;"><strong>Fase B2B:</strong> Implementación de una comunicación directa y resolutiva para la inscripción de emprendimientos y editoriales. Gestión de flujos de información y resolución de dudas técnicas.</li>
+        <li><strong>Fase B2C:</strong> Viraje estratégico hacia el público general. Transformación de la agenda técnica en una narrativa de entretenimiento, resaltando el cronograma artístico, talleres y mapas de experiencia para maximizar la convocatoria.</li>
+    </ul>
+    <div style="width: 100%; max-width: 450px; margin: 3rem auto; text-align: center;">
+        <p style="color: var(--ink); font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Curaduría Visual y Alcance Orgánico</p>
+        <img src="feed-feria2.webp" alt="Placa de estrategia en móvil" style="width: 100%; height: auto; display: block; margin: 0 auto; background: transparent;">
+    </div>
+    <h4 style="color: var(--neon); margin-top: 2rem; margin-bottom: 1rem; font-size: 1.2rem;">Resultados (100% orgánicos)</h4>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; background: rgba(26, 26, 26, 0.03); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--line);">
+        <div>
+            <p style="margin:0;"><strong>+100k views</strong><br>en contenidos con foco en identidad regional</p>
+            <p style="margin:0; margin-top: 15px;"><strong>+800</strong><br>emprendedores inscriptos exitosamente</p>
+        </div>
+        <div>
+            <p style="margin:0;"><strong>+4k seguidores</strong><br>ganados en los 3 primeros meses</p>
+            <p style="margin:0; margin-top: 15px;"><strong>Evento a plena capacidad</strong><br>las 3 jornadas</p>
+        </div>
+    </div>
+    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 1rem;">
+        <p style="font-size: 0.8rem; font-weight: bold; text-transform: uppercase;">Explorar más del proyecto:</p>
+        <a href="https://www.instagram.com/p/DW6qB04Df0J/?img_index=1" target="_blank" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: var(--ink); color: var(--canvas); text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 0.9rem;">EL PASO A PASO DE LA ESTRATEGIA 👀 <span>↗</span></a>
+        <a href="https://www.instagram.com/feriadelcentro_/" target="_blank" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border: 1px solid var(--ink); color: var(--ink); text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 0.9rem;">IG FERIA DEL CENTRO (solo edición 2025)<span>↗</span></a>
+    </div>`,
+         'FLINN': `
+<p style="color:var(--cobalt);font-weight:700;margin-bottom:1.5rem;text-transform:uppercase;font-size:0.85rem;letter-spacing:1px;">Dirección de comunicación B2B para ingeniería de vanguardia</p>
+<p><strong>FLINN</strong> es una empresa de ingeniería de alta complejidad liderada por doctores e ingenieros especialistas en <strong>CFD</strong> (Dinámica de Fluidos Computacional), <strong>FEA</strong> (Análisis de Elementos Finitos) e <strong>Ingeniería Inversa</strong>. Su núcleo de negocio es la simulación y el escaneo 3D para sectores críticos como Motorsport, Oil & Gas, HVAC, Ingeniería Nuclear y Aeroespacial.</p>
+<p><strong>El desafío:</strong> Construir la autoridad digital en mercados internacionales, traduciendo estos servicios de altísima complejidad a un lenguaje comercial, creando un puente entre la exactitud técnica de la industria y la generación de leads.</p>
+<p><strong>Mi rol estratégico:</strong> Como responsable de la comunicación digital bilingüe (inglés), diseño y ejecuto la estrategia omnicanal en <strong>LinkedIn e Instagram</strong>. No solo traduzco textos, sino que construyo, junto a una diseñadora, el universo visual y narrativo de la firma para posicionarlos como referentes del sector.</p>
+<div style="width: 100%; max-width: 600px; margin: 2rem auto;">
+<img src="mockup-flinn.webp" alt="Web de Flinn en Notebook" style="width: 100%; height: 100%; object-fit: cover; object-position: 10% 50%; display: block; aspect-ratio: 10/7;">
+</div>
+<h4 style="color:var(--cobalt);margin-top:2rem;margin-bottom:0.5rem;font-size:1.2rem;">Estrategia de contenidos en LinkedIn e Ig</h4>
+<ul style="margin:1.5rem 0;padding-left:1.2rem;font-size:0.95rem;line-height:1.6;">
+<li style="margin-bottom:10px;"><strong>Campañas de autoridad:</strong> Creación de activos visuales y conceptuales utilizando recursos de dirección de arte que rompen con la frialdad industrial.</li>
+<li><strong>Copywriting técnico B2B:</strong> Redacción de artículos y contenido institucional que mantienen el rigor científico, pero optimizados para la conversión comercial.</li>
+<li><strong>Curaduría visual e IA generativa:</strong> Implementación de modelos de lenguaje e IA para generar visualizaciones y videos de alta fidelidad que complementan los renders técnicos (CFD/FEA).</li>
+</ul>
+<div style="width: 100%; max-width: 550px; margin: auto; text-align: center;">
+    <p style="color: var(--ink); font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Carrusel B2B en LinkedIn</p>
+    <img src="linkedin-flinn.webp" alt="Estrategia en LinkedIn" style="width: 100%; height: auto; display: block; margin: 0 auto; background: transparent;">
+</div>
+<h4 style="color:var(--neon);margin-top:2rem;margin-bottom:1rem;font-size:1.2rem;">Algunas métricas (mensuales)</h4>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;background:rgba(26,26,26,0.03);padding:1.5rem;border-radius:8px;border:1px solid var(--line);">
+<div><p style="margin:0;"><strong>+71.8%</strong><br>en visualizaciones IG</p><p style="margin:0;margin-top:15px;"><strong>+178.2%</strong><br>en alcance de cuenta</p></div>
+<div><p style="margin:0;"><strong>+83.8%</strong><br>en interacciones</p><p style="margin:0;margin-top:15px;"><strong>Presencia B2B afianzada</strong><br>en LinkedIn</p></div>
+</div>
+<div style="width: 100%; max-width: 350px; margin: 4rem auto 3rem auto; text-align: center;">
+    <p style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: var(--ink); margin-bottom: 15px;">Feedback del cliente</p>
+    <img src="mensaje-cliente.webp" alt="Validación del cliente" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.06); display: block; margin: 0 auto;">
+</div>
+<div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:1rem;">
+<p style="font-size:0.8rem;font-weight:bold;text-transform:uppercase;">Explorá los canales:</p>
+<a href="https://www.linkedin.com/company/flinnar" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:1rem;background:var(--ink);color:var(--canvas);text-decoration:none;border-radius:4px;font-weight:bold;font-size:0.9rem;">LINKEDIN <span>↗</span></a>
+<a href="https://www.instagram.com/flinn.eng" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:1rem;background:var(--ink);color:var(--canvas);text-decoration:none;border-radius:4px;font-weight:bold;font-size:0.9rem;">INSTAGRAM <span>↗</span></a>
+<a href="https://flinnar.com" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:1rem;border:1px solid var(--ink);color:var(--ink);text-decoration:none;border-radius:4px;font-weight:bold;font-size:0.9rem;">WEB <span>↗</span></a>
+</div>`,
+            'Escuelas Sustentables': `
+    <p style="color: var(--cobalt); font-weight: 700; margin-bottom: 1.5rem; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Estrategia de Triple Impacto - Comunicación institucional y educación ambiental</p>
+    <p><strong>El Concurso Escuelas Sustentables</strong> es un certamen provincial (Córdoba, Arg.) organizado por la empresa de sustentabilidad y energías renovables <strong>HINS</strong>, junto a otros actores e instituciones. La iniciativa transforma a estudiantes secundarios en agentes de cambio, premiando la innovación con mentorías e instalaciones solares en sus escuelas.</p>
+    <p><strong>El desafío: </strong>Escalar un proyecto que nació con gran éxito y convertirlo en una política de educación de largo alcance. El reto evolucionó desde la gestión de una convocatoria masiva inicial hasta el desarrollo de una infraestructura pedagógica digital capaz de guiar a cientos de escuelas en la creación técnica de sus proyectos.</p>
+    <p><strong>Mi rol estratégico: </strong>Como parte del equipo de <strong>Activos Comunicación</strong> ,agencia responsable de la comunicación integral de HINS, (desempeñándome como coordinadora de branding y ejecutiva de cuenta) lideré el desarrollo de la comunicación digital, la curaduría de contenidos y la coordinación estratégica entre los equipos técnico y creativo.</p>
+    <div style="width: 100%; margin: 2rem 0; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+        <img src="concurso-escuelas.webp" alt="Evento de premiación Escuelas Sustentables" style="width: 100%; height: auto; display: block;">
+    </div>
+
+    <div style="background: var(--ink); color: var(--canvas); padding: 2.5rem 1.5rem; border-radius: 8px; margin: 2rem auto 2.5rem auto; text-align: center; border: 1px solid #D4AF37; width: 100%; box-sizing: border-box;">
+        <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; opacity: 0.8; width: 100%; text-align: center;">Trayectoria Multigalardonada</p>
+        <h3 style="margin: 0; color: #D4AF37; font-size: 1.6rem; letter-spacing: 1px; width: 100%; text-align: center;">4 reconocimientos por impacto social y ambiental</h3>
+        <p style="font-size: 0.95rem; margin-top: 10px; font-weight: 300; width: 100%; text-align: center;">Incluyendo el <strong>Eikon de Oro</strong> a la Sustentabilidad en Educación.</p>
+    </div>
+
+    <h4 style="color: var(--cobalt); margin-top: 2rem; margin-bottom: 0.5rem; font-size: 1.2rem;">Evolución y estrategia</h4>
+    <ul style="margin: 1.5rem 0; padding-left: 1.2rem; font-size: 0.95rem; line-height: 1.6;">
+        <li style="margin-bottom: 10px;"><strong>Edición I:</strong> La convocatoria superó las expectativas de inscripción en un <strong>150%</strong>.</li>
+        <li style="margin-bottom: 10px;"><strong>Edición II:</strong> Acompañé el lanzamiento de una proyección masiva que recibió <strong>+150 proyectos</strong> de 23 de los 24 departamentos de Córdoba.</li>
+        <li style="margin-bottom: 10px;"><strong>Plataforma educativa:</strong> Coordiné la creación de 8 módulos técnicos en solo un mes, transformando conocimientos complejos de energía en materiales didácticos accesibles (videos, guías y presentaciones).</li>
+    </ul>
+
+    <div style="width: 100%; max-width: 600px; margin: 3rem auto; text-align: center;">
+        <img src="mockup-concurso.webp" alt="Web del concurso" style="width: 100%; height: auto;">
+    </div>
+
+    <h4 style="color: var(--neon); margin-top: 2rem; margin-bottom: 1rem; font-size: 1.2rem;">Resultados de impacto</h4>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; background: rgba(26, 26, 26, 0.03); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--line);">
+        <div>
+            <p style="margin:0;"><strong>+150%</strong><br>Expectativa de inscripciones superada (Edición I)</p>
+            <p style="margin:0; margin-top: 15px;"><strong>+150 Proyectos</strong><br>recibidos de toda la provincia (Edición II)</p>
+        </div>
+        <div>
+            <p style="margin:0;"><strong>23/24</strong><br>Departamentos de Córdoba activos</p>
+            <p style="margin:0; margin-top: 15px;"><strong>4 Premios</strong><br>obtenidos por la estrategia de comunicación</p>
+        </div>
+    </div>
+
+ <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 1rem;">
+        <p style="font-size: 0.8rem; font-weight: bold; text-transform: uppercase; color: var(--ink); opacity: 0.8;">Documentación y Prensa de Autoridad:</p>
+        
+        <a href="https://escuelassustentables.hins.com.ar/" target="_blank" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: var(--ink); color: var(--canvas); text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 0.9rem;">SITIO WEB OFICIAL DEL CONCURSO <span>↗</span></a>
+
+        <a href="https://premioseikon.com/wp-content/uploads/2025/06/Informe-Comunicacion-Escuelas-Sustentables.pdf" target="_blank" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border: 1px solid var(--ink); color: var(--ink); text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 0.9rem;">INFORME EIKON: ESTRATEGIA GANADORA <span>↗</span></a>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+            <a href="https://www.lavoz.com.ar/ciudadanos/ambiente/se-dieron-a-conocer-los-ganadores-del-concurso-escuelas-sustentables-2025/" target="_blank" style="display: flex; justify-content: center; align-items: center; padding: 0.8rem; border: 1px solid var(--line); color: var(--ink); text-decoration: none; border-radius: 4px; font-size: 0.75rem; text-align: center; font-weight: bold;">COBERTURA LA VOZ</a>
+            <a href="https://prensa.cba.gov.ar/informacion-general/lanzan-la-segunda-edicion-del-concurso-escuelas-sustentables/" target="_blank" style="display: flex; justify-content: center; align-items: center; padding: 0.8rem; border: 1px solid var(--line); color: var(--ink); text-decoration: none; border-radius: 4px; font-size: 0.75rem; text-align: center; font-weight: bold;">PRENSA GOBIERNO CBA</a>
+        </div>
+    </div>
+`,
+'Cumbre de Economía Circular': `
+    <p style="color: var(--cobalt); font-weight: 700; margin-bottom: 1.5rem; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Comunicación política y de eventos de escala internacional</p>
+
+    <p>La <strong>Cumbre Mundial de Economía Circular</strong> es un evento de sustentabilidad masivo de la región, organizado por la Municipalidad de Córdoba y el Ente BioCórdoba. Este espacio reúne a líderes globales, intendentes y corporaciones para debatir el futuro de la transición energética, la economía circular, mercados de carbono, entre otros temas claves para enfrentar el cambio climático.</p>
+
+    <p><strong>El desafío: </strong>Liderar la comunicación omnicanal y en tiempo real de un evento internacional con extremas exigencias políticas y corporativas. El reto principal fue alinear el relato de la cumbre con la agenda de múltiples entidades públicas y privadas en simultáneo.</p>
+    
+    <p><strong>Mi rol estratégico: </strong>Como parte del equipo de <strong>Activos Comunicación</strong>, participé en la gestión de 3 ediciones consecutivas. Coordiné la cobertura en vivo y la redacción de gacetillas, y acompañé el guionado de spots y la estrategia de difusión. Mi gestión implicó una articulación multicuenta, trabajando en simultáneo para la Cumbre, el Presidente de BioCórdoba, el Ministerio de Infraestructura y sponsors/participantes (UrbaCor, HINS, EPEC).</p>
+
+    <div style="width: 100%; margin: 2rem 0; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+        <img src="4ta-cumbre.webp" alt="Multitud en la Cumbre de Economía Circular" style="width: 100%; height: auto; display: block;">
+    </div>
+
+    <h4 style="color: var(--cobalt); margin-top: 2rem; margin-bottom: 0.5rem; font-size: 1.2rem;">Ejes de ejecución</h4>
+    <ul style="margin: 1.5rem 0; padding-left: 1.2rem; font-size: 0.95rem; line-height: 1.6;">
+        <li style="margin-bottom: 10px;"><strong>Estrategia multicuenta:</strong> Sincronización de calendarios y narrativas cruzadas entre el sector público (entes gubernamentales, figuras políticas) y el privado (sponsors corporativos).</li>
+        <li style="margin-bottom: 10px;"><strong>Gestión de crisis y real-time:</strong> Dirección de cobertura en el terreno y resolución de imprevistos de comunicación en un entorno en vivo de alta presión.</li>
+        <li><strong>Producción omnicanal:</strong> Desarrollo integral de campañas de lanzamiento, abarcando desde pauta digital hasta soportes tradicionales (vía pública/OOH) y spots audiovisuales.</li>
+    </ul>
+
+    <div style="width: 100%; max-width: 400px; margin: 3rem auto; text-align: center;">
+        <img src="cumbre-2.webp" alt="Gestión de redes en vivo" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+    </div>
+
+    <h4 style="color: var(--neon); margin-top: 2rem; margin-bottom: 1rem; font-size: 1.2rem;">Escala del proyecto (Edición 2023)</h4>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; background: rgba(26, 26, 26, 0.03); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--line);">
+        <div>
+            <p style="margin:0;"><strong>+105.000</strong><br>Participantes</p>
+            <p style="margin:0; margin-top: 15px;"><strong>56</strong><br>Disertantes</p>
+        </div>
+        <div>
+            <p style="margin:0;"><strong>4 meses</strong><br>de estrategia multicanal y multicuenta</p>
+            <p style="margin:0; margin-top: 15px;"><strong>+5 cuentas</strong><br>coordinadas en simultáneo</p>
+        </div>
+    </div>
+<div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 1rem;">
+        <p style="font-size: 0.8rem; font-weight: bold; text-transform: uppercase; color: var(--ink); opacity: 0.8;">Documentación y Cobertura:</p>
+        
+        <a href="https://cumbremundialdeeconomiacircular.com.ar/sobre-la-cumbre/" target="_blank" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: var(--ink); color: var(--canvas); text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 0.9rem;">SITIO WEB OFICIAL (HISTÓRICO) <span>↗</span></a>
+
+        <a href="https://www.linkedin.com/posts/guadacasalotti_pas%C3%B3-la-4ta-edici%C3%B3n-de-la-cumbre-mundial-activity-7209310779743887360-ulA7" target="_blank" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border: 1px solid var(--ink); color: var(--ink); text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 0.9rem;">REGISTRO DE COBERTURA Y EQUIPO <span>↗</span></a>
+    </div>
+`, 'Único Juegos': `
+    <p style="color: var(--cobalt); font-weight: 700; margin-bottom: 1.5rem; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Posicionamiento B2C - Creación de comunidad y lifestyle</p>
+
+    <p><strong>Único</strong> es un parque recreativo al aire libre en el polo "Playa Chic" (Almafuerte). Se destaca por un diseño intergeneracional donde cada instalación tiene un propósito: potenciar la estimulación en los niños y facilitar la reconexión emocional de los adultos con su "niño interior".</p>
+
+    <p><strong>El desafío: </strong>Romper con la saturación visual típica del rubro del entretenimiento infantil. El reto fue diseñar una comunicación que no dependiera exclusivamente de "fotos del parque", sino que aportara contenido de valor para posicionar el espacio como una experiencia cuidada, estética, con foco en la naturaleza y el bienestar familiar.</p>
+    
+    <p><strong>Mi rol estratégico: </strong>Diseñé y lidero la estrategia de Social Media (Instagram), desarrollando el storytelling, la curaduría de ejes temáticos y de contenido y el copywriting. En dupla con una diseñadora ejecutamos un viraje narrativo centrado en la creación de comunidad, priorizando la calidad conceptual.</p>
+
+    <div style="width: 100%; margin: 2rem 0; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+        <img src="unico-imagen.webp" alt="Experiencia al aire libre en Único Juegos" style="width: 100%; height: auto; display: block;">
+    </div>
+
+    <h4 style="color: var(--cobalt); margin-top: 2rem; margin-bottom: 0.5rem; font-size: 1.2rem;">Estrategia de contenidos</h4>
+    <ul style="margin: 1.5rem 0; padding-left: 1.2rem; font-size: 0.95rem; line-height: 1.6;">
+        <li style="margin-bottom: 10px;"><strong>Contenido de valor (Edu-tainment):</strong> Desarrollo de placas y narrativas que explican el "por qué" detrás de cada juego, educando a la audiencia sobre neurodesarrollo y juego libre.</li>
+        <li style="margin-bottom: 10px;"><strong>Estética Editorial:</strong> Alejamiento del feed promocional clásico hacia una curaduría visual limpia que transmite la vibra "Playa Chic" y el contacto con la naturaleza.</li>
+        <li><strong>Storytelling Intergeneracional:</strong> Redacción orientada no solo a los padres como compradores, sino a la familia como usuaria de una experiencia de desconexión digital.</li>
+    </ul>
+
+    <div style="width: 100%; max-width: 800px; margin: 3rem auto; text-align: center;">
+        <p style="font-size: 0.75rem; font-weight: bold; text-transform: uppercase; color: var(--ink); margin-bottom: 15px;">Contenido de valor estratégico en Instagram</p>
+        <img src="mockup-unico.webp" alt="Estrategia visual en Instagram" style="width: 100%; height: auto; border-radius: 8px; background: transparent; display: block; margin: 0 auto;">
+    </div>
+
+    <h4 style="color: var(--neon); margin-top: 2rem; margin-bottom: 1rem; font-size: 1.2rem;">Impacto Inicial</h4>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; background: rgba(26, 26, 26, 0.03); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--line);">
+        <div>
+            <p style="margin:0;"><strong>Identidad consolidada</strong><br>Posicionamiento claro frente a la competencia</p>
+        </div>
+        <div>
+            <p style="margin:0;"><strong>Comunidad activa</strong><br>Engagement basado en valor</p>
+        </div>
+    </div>
+
+    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 1rem;">
+        <p style="font-size: 0.8rem; font-weight: bold; text-transform: uppercase; color: var(--ink); opacity: 0.8;">Explorar el proyecto:</p>
+        <a href="https://www.instagram.com/unico.juegos/" target="_blank" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: var(--ink); color: var(--canvas); text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 0.9rem;">INSTAGRAM DE ÚNICO<span>↗</span></a>
+    </div>
+`,
+'Trabajo Periodístico': `
+    <p style="color: var(--cobalt); font-weight: 700; margin-bottom: 1.5rem; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Periodismo Cultural - Redacción periodística, entrevistas y storytelling</p>
+
+    <p><strong>La base de mi narrativa:</strong> Mi formación y experiencia en periodismo cultural a través de crónicas y entrevistas (FM Boedo, Revista Rabia) son el cimiento de mi capacidad para conectar marcas con audiencias. Estos espacios fueron escuela para entender que observar y escuchar son la base indispensable para lograr traducir cualquier evento e idea en comunicación.</p>
+
+    <p><strong>El enfoque: </strong>Durante más de 3 años mi trabajo se centró en la escena musical argentina, cubriendo festivales y realizando entrevistas a artistas. El desafío era adaptar una experiencia sensorial y efímera (un show en vivo) a formatos digitales (web, mailing, redes) sin perder la esencia ni la emoción del momento.</p>
+    
+    <div style="width: 100%; margin: 2rem 0; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+        <img src="foto-recital.webp" alt="Cobertura de eventos culturales y música" style="width: 100%; height: auto; display: block;">
+    </div>
+
+    <h4 style="color: var(--cobalt); margin-top: 2rem; margin-bottom: 0.5rem; font-size: 1.2rem;">Habilidades Editoriales</h4>
+    <ul style="margin: 1.5rem 0; padding-left: 1.2rem; font-size: 0.95rem; line-height: 1.6;">
+        <li style="margin-bottom: 10px;"><strong>Crónica de impacto:</strong> Redacción orientada a capturar la atmósfera y la emoción, transformando hechos en relatos memorables.</li>
+        <li style="margin-bottom: 10px;"><strong>Entrevistas de profundidad:</strong> Capacidad de escucha para extraer el valor real del interlocutor y jerarquizar la información.</li>
+        <li><strong>Adaptabilidad multicanal:</strong> Traducción de un mismo concepto para audiencias de Facebook, newsletters y portales web, manteniendo la coherencia estilística.</li>
+    </ul>
+
+    <div style="display: flex; flex-direction: column; gap: 3rem; margin: 3rem 0; align-items: center;">
+        <div style="width: 100%;">
+            <img src="mockup-cronica.webp" alt="Mockup crónica desktop" style="width: 80%; height: auto; border-radius: 8px; display: block; margin: 0 auto;">
+        </div>
+    </div>
+
+    <h4 style="color: var(--neon); margin-top: 2rem; margin-bottom: 1rem; font-size: 1.2rem;">Trayectoria</h4>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; background: rgba(26, 26, 26, 0.03); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--line);">
+        <div>
+            <p style="margin:0; font-size: 1.1rem;"><strong>+30 crónicas</strong></p>
+            <p style="margin:0; font-size: 0.9rem;">publicadas en medios digitales</p>
+        </div>
+        <div>
+            <p style="margin:0; font-size: 1.1rem;"><strong>+15 entrevistas</strong></p>
+            <p style="margin:0; font-size: 0.9rem;">a referentes de la escena musical nacional</p>
+        </div>
+    </div>
+
+    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 1rem;">
+        <p style="font-size: 0.8rem; font-weight: bold; text-transform: uppercase; color: var(--ink); opacity: 0.8; margin-bottom: 0.5rem;">Archivo de registros seleccionados</p>
+        
+        <a href="https://www.facebook.com/notes/357522835327654/" target="_blank" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: var(--ink); color: var(--canvas); text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 0.85rem; width: 100%; box-sizing: border-box; text-transform: uppercase;">
+            ENTREVISTA A ERUCA SATIVA<span>↗</span>
+        </a>
+        
+        <a href="https://www.facebook.com/notes/839789630122272/" target="_blank" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: transparent; color: var(--ink); border: 1px solid var(--ink); text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 0.85rem; width: 100%; box-sizing: border-box; text-transform: uppercase;">
+            CRÓNICA TODO APARENTA NORMAL<span>↗</span>
+        </a>
+        
+        <a href="https://www.facebook.com/notes/351692549496890/" target="_blank" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: transparent; color: var(--ink); border: 1px solid var(--ink); text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 0.85rem; width: 100%; box-sizing: border-box; text-transform: uppercase;">
+            CRÓNICA MÁS QUE UNO Y RHINO <span>↗</span>
+        </a>
+    </div>
+  `
+        };
+
+        function abrirModal(id) {
+            document.getElementById('modal-title').innerText = id;
+            document.querySelector('.modal-body').innerHTML = infoProyectos[id] || "<p>En desarrollo...</p>";
+            document.getElementById('proyecto-modal').style.display = 'flex';
+            
+            setTimeout(() => {
+                const titulo = document.getElementById('modal-title');
+                if (titulo) {
+                    titulo.scrollIntoView({ behavior: 'instant', block: 'start' });
+                }
+                document.getElementById('proyecto-modal').scrollTop = 0;
+                document.querySelector('.modal-body').scrollTop = 0;
+                const contenedorExtra = document.querySelector('.modal-content');
+                if (contenedorExtra) contenedorExtra.scrollTop = 0;
+            }, 15);
+        }
+
+        function cerrarModal() { 
+            document.getElementById('proyecto-modal').style.display = 'none'; 
+        }
+
+        document.getElementById('proyecto-modal').addEventListener('click', function(e) {
+            if (e.target === this) cerrarModal();
+        });
+
+        const wrapper = document.querySelector('.gallery-wrapper');
+        if (wrapper) {
+            let isInteracting = false;
+            wrapper.addEventListener('mouseenter', () => isInteracting = true);
+            wrapper.addEventListener('mouseleave', () => isInteracting = false);
+
+            function autoScrollGallery() {
+                if (!isInteracting) {
+                    wrapper.scrollLeft += 1; 
+                    if (wrapper.scrollLeft >= wrapper.scrollWidth / 2) {
+                        wrapper.scrollLeft = 0;
+                    }
+                }
+                requestAnimationFrame(autoScrollGallery);
+            }
+            autoScrollGallery();
+        }
+    </script>
+</body>
+</html>
